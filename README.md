@@ -30,6 +30,49 @@
 
 ---
 
+## 📥 快速安装
+
+### 方法 1：一键安装脚本（推荐）
+
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy Bypass -File <(Invoke-WebRequest -Uri "https://raw.githubusercontent.com/duheng-ai/complaint-order/main/install.ps1" -OutFile -)
+```
+
+或直接下载后运行：
+```powershell
+powershell -ExecutionPolicy Bypass -File install.ps1
+```
+
+**Linux / macOS (Bash):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/duheng-ai/complaint-order/main/install.sh | bash
+```
+
+或下载后运行：
+```bash
+bash install.sh
+```
+
+### 方法 2：手动安装
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/duheng-ai/complaint-order.git ~/.openclaw/workspace/skills/complaint-order
+
+# 2. 安装依赖
+cd ~/.openclaw/workspace/skills/complaint-order
+npm install
+
+# 3. 配置账号密码
+# 编辑 index.js，修改 CONFIG 中的 phone 和 password
+
+# 4. 重启网关
+openclaw gateway restart
+```
+
+---
+
 ## 📋 订单号解析规则
 
 | 规则 | 订单号前缀 | 示例 | 日期提取方式 | 显示名称 |
