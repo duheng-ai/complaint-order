@@ -1,0 +1,21 @@
+{
+  "name": "complaint-order",
+  "version": "1.2.0",
+  "description": "通道投诉订单查询技能（近半年按月轮询）",
+  "main": "index.js",
+  "scripts": {
+    "test": "node run.js"
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "complaint",
+    "order",
+    "lianok"
+  ],
+  "author": "duheng",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
